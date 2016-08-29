@@ -4,6 +4,8 @@ from Tkinter import *
 import ttk
 import urllib
 import json
+from bs4 import BeautifulSoup
+from cdl_functions import *
 
 def getRecordFromWorld():
 	print "got a record"
@@ -53,9 +55,9 @@ def learn():
 			while(len(discogsSearchTerms) < 50):
 				aSearchTerm = webSearchTerms.pop()
 				
-				urlString
-				wikipedia = urllib.urlopen(urlString).read()
-		
+				print getWikipediaText(aSearchTerm)
+				
+				
 	
 	
 	
